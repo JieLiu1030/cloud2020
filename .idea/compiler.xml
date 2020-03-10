@@ -7,6 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-consumer-order80" />
         <module name="cloud-provider-payment8001" />
       </profile>
     </annotationProcessing>

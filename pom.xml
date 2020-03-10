@@ -9,26 +9,28 @@
   <version>1.0-SNAPSHOT</version>
     <modules>
         <module>cloud-provider-payment8001</module>
+        <module>cloud-consumer-order80</module>
+        <module>cloud-api-commons</module>
     </modules>
     <packaging>pom</packaging>
 
-  <!-- 统一管理Jar包版本 -->
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <junit.version>4.12</junit.version>
-    <log4j.version>1.2.17</log4j.version>
-    <lombok.version>1.16.18</lombok.version>
-    <mysql.version>5.1.47</mysql.version>
-    <druid.version>1.1.16</druid.version>
-    <mybatis.spring.boot.version>1.3.0</mybatis.spring.boot.version>
-  </properties>
+    <!-- 统一管理jar包版本 -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <junit.version>4.12</junit.version>
+        <log4j.version>1.2.17</log4j.version>
+        <lombok.version>1.16.18</lombok.version>
+        <mysql.version>5.1.47</mysql.version>
+        <druid.version>1.1.16</druid.version>
+        <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
+    </properties>
 
-  <!-- 子模块继承之后，提供作用：锁定版本+子module不用写groupId和version -->
-  <dependencyManagement>
+    <!-- 子模块继承之后，提供作用：锁定版本+子模块不用写groupId和version  -->
+    <dependencyManagement>
         <dependencies>
-            <!-- spring boot 2.2.2 -->
+            <!-- springboot 2.2.2 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -36,7 +38,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- spring cloud Hoxton.SR1 -->
+            <!-- springcloud cloud Hoxton.SR1 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -44,7 +46,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- spring cloud alibaba 2.1.0.RELEASE -->
+            <!-- springcloud cloud alibaba 2.1.0.RELEASE -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -68,14 +70,14 @@
                 <version>${mybatis.spring.boot.version}</version>
             </dependency>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
