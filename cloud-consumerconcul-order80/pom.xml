@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-order80</artifactId>
+    <artifactId>cloud-consumerconcul-order80</artifactId>
 
     <dependencies>
         <!--consul-->
@@ -46,7 +46,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--引入自己定义的api调用包，可以使用Payment支付Entity-->
+        <!--引入自己的API通用包,可以使用Payment支付Entity-->
         <dependency>
             <groupId>com.atlj.springcloud</groupId>
             <artifactId>cloud-api-commons</artifactId>
