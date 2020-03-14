@@ -12,10 +12,10 @@
     <artifactId>cloud-consumer-order80</artifactId>
 
     <dependencies>
-        <!--consul-->
+        <!--Eureka客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <!--web启动器-->
         <dependency>
