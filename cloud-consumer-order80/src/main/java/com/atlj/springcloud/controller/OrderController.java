@@ -52,4 +52,5 @@ public class OrderController {
         URI uri = instance.getUri();
         return restTemplate.getForObject(uri+"/payment/lb",String.class);
     }
+
 }

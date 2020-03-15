@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-api-commons" />
+        <module name="cloud-consumer-feign-order80" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-consumerconcul-order80" />
         <module name="cloud-eureka-server7001" />
