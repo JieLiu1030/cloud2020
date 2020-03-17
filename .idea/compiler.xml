@@ -10,6 +10,7 @@
         <module name="cloud-api-commons" />
         <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloud-consumer-feign-order80" />
+        <module name="cloud-consumer-hystrix-dashboard9001" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-consumerconcul-order80" />
         <module name="cloud-eureka-server7001" />
