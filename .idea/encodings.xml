@@ -18,6 +18,8 @@
     <file url="file://$PROJECT_DIR$/cloud-provider-payment8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-payment8003" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-providerconsul-payment8006" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
