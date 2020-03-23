@@ -1,5 +1,5 @@
 server:
-  port: 8802
+  port: 8803
 
 spring:
   application:
@@ -21,6 +21,7 @@ spring:
           destination: testExchange # 表示要使用的Exchange名称定义
           content-type: application/json # 设置消息类型，本次为json，文本则设置“text/plain”
           binder: defaultRabbit # 设置要绑定的消息服务的具体设置
+          group: GroupA
 
 eureka:
   client:
@@ -29,5 +30,5 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 2 # 设置心跳时间间隔（默认为2秒）
     lease-expiration-duration-in-seconds: 5 # 如果超过了5秒的时间没有收到信号则去除服务注册信息
-    instance-id: receive-8802.com # 在信息列表时显示主机名称
+    instance-id: receive-8803.com # 在信息列表时显示主机名称
     prefer-ip-address: true # 在访问的路径变为IP地址
