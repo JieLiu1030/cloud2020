@@ -13,6 +13,11 @@
 
 
     <dependencies>
+        <!-- 包含了sleuth和zipkin -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
         <!--引入自己定义的api调用包，可以使用Payment支付Entity-->
         <dependency>
             <groupId>com.atlj.springcloud</groupId>
